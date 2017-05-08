@@ -251,7 +251,7 @@ public class SnapExport extends AsyncTask {
 
         // Showing Alert Message
         alertDialog.show();
-        alertDialog.setIcon(R.drawable.leapsnap);
+        alertDialog.setIcon(R.drawable.otappicon);
         Button btn_OK = alertDialog.getButton(alertDialog.BUTTON_POSITIVE);
         LinearLayout.LayoutParams positiveButtonLL = (LinearLayout.LayoutParams) btn_OK.getLayoutParams();
         positiveButtonLL.gravity = Gravity.CENTER;

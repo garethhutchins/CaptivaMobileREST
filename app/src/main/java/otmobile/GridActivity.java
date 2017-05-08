@@ -66,8 +66,8 @@ public class GridActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        GridView gridview = (GridView) findViewById(R.id.gridView);
-        gridview.setAdapter(new ImageAdapter(this));
+        //GridView gridview = (GridView) findViewById(R.id.gridView);
+        //gridview.setAdapter(new ImageAdapter(this));
 
     }
 
