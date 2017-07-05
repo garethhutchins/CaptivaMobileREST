@@ -6,10 +6,11 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Environment;
 import android.preference.PreferenceManager;
+import android.support.v4.content.FileProvider;
 import android.util.Log;
 
 import com.android.volley.AuthFailureError;
@@ -36,7 +37,6 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -97,8 +97,15 @@ public class DownloadPDF extends AsyncTask {
         dialog.show();
         super.onPreExecute();
     }
-    public void showPdf(String DownloadFile)
+    public void showPdf(File DownloadFile)
     {
+        Uri DownloadURI = FileProvider.getUriForFile(context, context.getApplicationContext().getPackageName() + ".provider", DownloadFile);
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setDataAndType(DownloadURI, "application/pdf");
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        context.startActivity(Intent.createChooser(intent, "Open PDF"));
+        /**
         File file = new File(DownloadFile);
         PackageManager packageManager = context.getPackageManager();
         Intent testIntent = new Intent(Intent.ACTION_VIEW);
@@ -109,6 +116,7 @@ public class DownloadPDF extends AsyncTask {
         Uri uri = Uri.fromFile(file);
         intent.setDataAndType(uri, "application/pdf");
         context.startActivity(intent);
+         **/
     }
     private void Download() {
         dialog.setMessage("Downloading PDF");
@@ -125,15 +133,16 @@ public class DownloadPDF extends AsyncTask {
             connection.addRequestProperty("CPTV-TICKET",_ticket);
             connection.setRequestProperty("CPTV-TICKET",_ticket);
             connection.connect();
-
+            File file;
             int lenghtOfFile = connection.getContentLength();
 
             // download the file
 
             InputStream input = new BufferedInputStream(connection.getInputStream());
             String DownloadFile = "/sdcard/downloadedfile.pdf";
+            file = new File(Environment.getExternalStorageDirectory(),"DownloadedFile.pdf");
 
-            OutputStream output = new FileOutputStream(DownloadFile);
+            OutputStream output = new FileOutputStream(file);
 
             byte data[] = new byte[1024];
 
@@ -160,7 +169,7 @@ public class DownloadPDF extends AsyncTask {
             //Stop the dialog
             dialog.dismiss();
             //Now Open the file
-            showPdf(DownloadFile);
+            showPdf(file);
 
 
         } catch (MalformedURLException e) {

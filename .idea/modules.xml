@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CaptivaMobileREST.iml" filepath="$PROJECT_DIR$/CaptivaMobileREST.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OTXMobile.iml" filepath="$PROJECT_DIR$/OTXMobile.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/CaptivaMobileSdk/captivamobilesdk.iml" filepath="$PROJECT_DIR$/CaptivaMobileSdk/captivamobilesdk.iml" />
     </modules>

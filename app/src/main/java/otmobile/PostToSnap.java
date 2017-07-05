@@ -131,7 +131,7 @@ public class PostToSnap extends AsyncTask {
     private void login() {
         String url;
 
-        dialog.setMessage("Logging in to Snap");
+        dialog.setMessage("Logging in to Captiva");
 
         SharedPreferences gprefs = PreferenceManager.getDefaultSharedPreferences(context);
         loginRequest Login = new loginRequest();
@@ -432,7 +432,7 @@ public class PostToSnap extends AsyncTask {
 
     @Override
     protected void onPreExecute() {
-        dialog.setMessage("Posting to Snap");
+        dialog.setMessage("Posting to Captiva");
         dialog.show();
         super.onPreExecute();
     }

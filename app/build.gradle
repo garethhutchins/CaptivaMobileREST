@@ -29,7 +29,7 @@ android {
     // Note that the build tools version supports a lesser compiler version.
     buildToolsVersion '25.0.2'
     defaultConfig {
-        applicationId 'emc.captiva.mobile.snapmobilewip'
+        applicationId 'captiva.mobile'
         // Bumped the minimum to API 16 (Jelly Bean). API 16 captures 88% of Android users as of July 2015.
         minSdkVersion 19
 
@@ -44,10 +44,10 @@ android {
     // that upgrades are possible (instead of a side-by-side installation).
     signingConfigs {
         release {
-            storeFile file('sdk-sample-app-release.keystore')
-            keyAlias 'sdk_sample_app'
-            storePassword 'sdksampleappreleasekeystorepassword'
-            keyPassword 'sdksampleappreleasekeystorepassword'
+            storeFile file('captiva_mobile-release.keystore')
+            keyAlias 'captiva_mobile'
+            storePassword 'captivamobilepreleasekeystorepassword'
+            keyPassword 'captivamobilepreleasekeystorepassword'
         }
     }
     buildTypes {

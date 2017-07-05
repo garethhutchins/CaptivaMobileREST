@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- * Copyright 2013-2016 EMC Corporation.  All rights reserved. -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="emc.captiva.mobile.snapmobilewip"
+    package="captiva.mobile"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -36,6 +36,16 @@
         android:icon="@drawable/otappicon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="captiva.mobile.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
         <activity
             android:name="otmobile.MainActivity"
             android:label="@string/MainPage_Title"

@@ -43,18 +43,19 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:visibility="invisible"
                 android:onClick="onUndoAll" />
+
         <Button
             android:id="@+id/btn_SendToSnap"
-            android:text="Send To Snap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#00A388"
-            android:textColor="#FFFFFF"
-            android:padding="10dp"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:onClick="onSendToSnap"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:background="#00A388"
+            android:onClick="onSendToSnap"
+            android:padding="10dp"
+            android:text="Send To Captiva"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF" />
 
         <Button
                 android:id="@+id/UndoButton"

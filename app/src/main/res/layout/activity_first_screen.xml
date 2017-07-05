@@ -11,53 +11,52 @@
         android:id="@+id/floatSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="39dp"
-        android:layout_marginStart="300dp"
+        android:layout_marginBottom="32dp"
         android:background="@android:color/holo_green_dark"
         android:clickable="true"
         android:scaleType="fitCenter"
         android:src="@android:drawable/ic_menu_preferences"
-        app:fabSize="normal" />
+        app:fabSize="normal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="17dp" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingGallery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/floatSettings"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="19dp"
-        android:layout_marginStart="300dp"
+        android:layout_marginBottom="22dp"
         android:background="@android:color/holo_green_dark"
         android:clickable="true"
         android:scaleType="fitCenter"
         android:src="@android:drawable/ic_menu_gallery"
-        app:fabSize="normal" />
+        app:fabSize="normal"
+        android:layout_above="@+id/floatSettings"
+        android:layout_alignStart="@+id/floatSettings" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingCamera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/floatingGallery"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="14dp"
-        android:layout_marginStart="300dp"
+        android:layout_marginBottom="15dp"
         android:background="@android:color/holo_green_dark"
         android:clickable="true"
         android:scaleType="fitCenter"
         android:src="@android:drawable/ic_menu_camera"
-        app:fabSize="normal" />
+        app:fabSize="normal"
+        android:layout_above="@+id/floatingGallery"
+        android:layout_alignStart="@+id/floatingGallery" />
 
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:contentDescription="Snap Logo"
         android:cropToPadding="false"
         android:scaleType="fitXY"
-        android:src="@drawable/otbackground" />
+        android:src="@drawable/otbackground"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
