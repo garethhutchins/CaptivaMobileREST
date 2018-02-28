@@ -443,8 +443,8 @@ public final class CoreHelper {
         //We're just going to hard code these
         //String license = preferences.getString(CoreHelper.getStringResource(context, R.string.GPREF_LICENSE), "");
         //String applicationId = preferences.getString(CoreHelper.getStringResource(context, R.string.GPREF_APPLICATIONID), "");
-        String license = ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Product=Captiva Mobile SDK, CreateDate=2014-04-23 14:44:54, KeyId=c340-fe9a-ae78, Sales Order No=EMC Internal, Customer Name=EMC Internal DEV, Application Name=EMC World 2014 Demo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*!0834204886454239320/dVVgd1hAPj0XzDFEdkg+yPbWOR/a8apYFRHv3zDXnVNK2j0GY0ES0KsZxNTy6pUWZw0CY1Mof5Wk1PLqlRZnDQJjUyh/ydeE+dWm1PLqlQhmCynzgXkV7p2HFVpEOA==*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>";
-        String applicationId = "EMC World 2014 Demo";
+        String license = "";
+        String applicationId = "";
         return !(license.length() <= 0 || applicationId.length() <= 0) && CaptureImage.addLicenseKey(applicationId, license);
     }
 }
