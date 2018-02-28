@@ -1,211 +1,269 @@
 -- Merging decision tree log ---
-manifest
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:2:1-84:12
-	package
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:3:5-23
-		INJECTED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
-	android:versionName
-		INJECTED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
-	xmlns:android
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:2:11-69
-	android:versionCode
-		INJECTED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
-uses-feature#android.hardware.camera
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:5:5-7:35
-MERGED from [CaptivaMobileREST:captivamobilesdk:unspecified] C:\Users\hutchg\.android\build-cache\397a78972b57ff9092a2c5ac3eaf9dfad249cbc7\output\AndroidManifest.xml:12:5-14:35
-	android:required
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:7:9-32
-	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:6:9-47
-uses-feature#android.hardware.camera.autofocus
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:9:5-11:35
-MERGED from [CaptivaMobileREST:captivamobilesdk:unspecified] C:\Users\hutchg\.android\build-cache\397a78972b57ff9092a2c5ac3eaf9dfad249cbc7\output\AndroidManifest.xml:15:5-17:35
-	android:required
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:11:9-32
-	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:10:9-57
-uses-feature#android.hardware.camera.flash
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:13:5-15:35
-MERGED from [CaptivaMobileREST:captivamobilesdk:unspecified] C:\Users\hutchg\.android\build-cache\397a78972b57ff9092a2c5ac3eaf9dfad249cbc7\output\AndroidManifest.xml:18:5-20:36
-	android:required
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:15:9-32
-	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:14:9-53
-uses-feature#android.hardware.sensor.accelerometer
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:16:5-18:35
-MERGED from [CaptivaMobileREST:captivamobilesdk:unspecified] C:\Users\hutchg\.android\build-cache\397a78972b57ff9092a2c5ac3eaf9dfad249cbc7\output\AndroidManifest.xml:21:5-23:36
-	android:required
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:18:9-32
-	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:17:9-61
-uses-feature#android.hardware.sensor.light
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:19:5-21:35
-MERGED from [CaptivaMobileREST:captivamobilesdk:unspecified] C:\Users\hutchg\.android\build-cache\397a78972b57ff9092a2c5ac3eaf9dfad249cbc7\output\AndroidManifest.xml:24:5-26:36
-	android:required
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:21:9-32
-	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:20:9-53
-uses-permission#android.permission.INTERNET
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:23:5-67
-	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:23:22-64
-uses-permission#android.permission.CAMERA
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:24:5-65
-MERGED from [CaptivaMobileREST:captivamobilesdk:unspecified] C:\Users\hutchg\.android\build-cache\397a78972b57ff9092a2c5ac3eaf9dfad249cbc7\output\AndroidManifest.xml:28:5-65
-	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:24:22-62
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:25:5-81
-MERGED from [CaptivaMobileREST:captivamobilesdk:unspecified] C:\Users\hutchg\.android\build-cache\397a78972b57ff9092a2c5ac3eaf9dfad249cbc7\output\AndroidManifest.xml:29:5-81
-	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:25:22-78
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:26:5-79
-	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:26:22-76
-application
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:28:5-82:19
-MERGED from [com.android.support:design:25.1.0] C:\Users\hutchg\.android\build-cache\8af62dcf57d6eec1e1e8e524a933a2082d497a1a\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\hutchg\.android\build-cache\3d00f3805afb6a8b148ad8100d4e3626db018f32\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\hutchg\.android\build-cache\5aa8cdad563d7107076a02b3a9d2e4e2a513d546\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\hutchg\.android\build-cache\d3876316818673e39506319ccfb5c397ef4bd736\output\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:transition:25.1.0] C:\Users\hutchg\.android\build-cache\4e535a4f1c013260b6e1dda489343c9c491d6827\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\hutchg\.android\build-cache\b292c3f7fae6bca3306a9cdfa6d803f8ed43de15\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\hutchg\.android\build-cache\240ba0bb448670a2798f9d8998e9deabc60d2d6c\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\hutchg\.android\build-cache\2a206ca7ea66f7ef6b7b32d7311c58bf5a11ac6c\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\hutchg\.android\build-cache\a7a540df6043ac212013cb98ffcff3a6f10c7a67\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\hutchg\.android\build-cache\5c0fecc768d4bc9f3ca6ed4f1e95ce2bfd80b6da\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.1.0] C:\Users\hutchg\.android\build-cache\b8f7e0e17a0bc23e8793001fbdd7c5baca69ce00\output\AndroidManifest.xml:25:5-20
-	android:label
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:31:9-41
-	android:allowBackup
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:29:9-35
-	android:icon
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:30:9-43
-	android:theme
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:32:9-40
 provider#android.support.v4.content.FileProvider
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:33:9-41:20
-	android:authorities
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:35:13-60
-		INJECTED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:33:9-41:20
 	android:grantUriPermissions
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:37:13-47
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:37:13-47
+	android:authorities
+		INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:35:13-60
 	android:exported
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:36:13-37
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:36:13-37
 	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:34:13-67
-meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:38:13-40:57
-	android:resource
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:40:17-55
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:34:13-67
+manifest
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:2:1-84:12
+INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:2:1-84:12
+INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:2:1-84:12
+INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:2:1-84:12
+MERGED from [com.android.support:design:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\ebc0232e4221b5e0547d006b22133714\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\0f7ddc575c052f3b171f86d52c6dbf16\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:transition:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\0372f817130fea3dc54368a5d5fe28be\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\1274298c8da5a2c793c75ef92dd854e5\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.1.0.aar\ad9cd7e40b6a7fea2d49fe4dbbc01471\AndroidManifest.xml:17:1-22:12
+MERGED from [:CaptivaMobileSdk] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\CaptivaMobileSdk.aar\320935b22bccb5de27f7279f99fc928e\AndroidManifest.xml:3:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\06fed7fcb030f2a13ecec57a444c8126\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\572a9a9b8e9cfefef4a002905a97c3c3\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\baa92db72816702555f455636fab4d69\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\78e852d3bfd09d42eb130349acb79d71\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\9e6a7ed18e9d1f90b0371a1f66c20eb8\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\395428766b6dbfff69b6a813dc06570b\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.0.aar\e0399342692967eaaff6e4bc84d0b1cf\AndroidManifest.xml:17:1-27:12
+INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:2:1-84:12
+INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:2:1-84:12
+INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:2:1-84:12
+	package
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:3:5-23
+		INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:2:1-84:12
+		INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:2:1-84:12
+		INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:2:11-69
+uses-feature#android.hardware.camera
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:5:5-7:35
+MERGED from [:CaptivaMobileSdk] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\CaptivaMobileSdk.aar\320935b22bccb5de27f7279f99fc928e\AndroidManifest.xml:12:5-14:35
+MERGED from [:CaptivaMobileSdk] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\CaptivaMobileSdk.aar\320935b22bccb5de27f7279f99fc928e\AndroidManifest.xml:12:5-14:35
+	android:required
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:7:9-32
 	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:39:17-67
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:6:9-47
+uses-feature#android.hardware.camera.autofocus
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:9:5-11:35
+MERGED from [:CaptivaMobileSdk] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\CaptivaMobileSdk.aar\320935b22bccb5de27f7279f99fc928e\AndroidManifest.xml:15:5-17:35
+MERGED from [:CaptivaMobileSdk] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\CaptivaMobileSdk.aar\320935b22bccb5de27f7279f99fc928e\AndroidManifest.xml:15:5-17:35
+	android:required
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:11:9-32
+	android:name
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:10:9-57
+uses-feature#android.hardware.camera.flash
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:13:5-15:35
+MERGED from [:CaptivaMobileSdk] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\CaptivaMobileSdk.aar\320935b22bccb5de27f7279f99fc928e\AndroidManifest.xml:18:5-20:36
+MERGED from [:CaptivaMobileSdk] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\CaptivaMobileSdk.aar\320935b22bccb5de27f7279f99fc928e\AndroidManifest.xml:18:5-20:36
+	android:required
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:15:9-32
+	android:name
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:14:9-53
+uses-feature#android.hardware.sensor.accelerometer
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:16:5-18:35
+MERGED from [:CaptivaMobileSdk] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\CaptivaMobileSdk.aar\320935b22bccb5de27f7279f99fc928e\AndroidManifest.xml:21:5-23:36
+MERGED from [:CaptivaMobileSdk] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\CaptivaMobileSdk.aar\320935b22bccb5de27f7279f99fc928e\AndroidManifest.xml:21:5-23:36
+	android:required
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:18:9-32
+	android:name
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:17:9-61
+uses-feature#android.hardware.sensor.light
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:19:5-21:35
+MERGED from [:CaptivaMobileSdk] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\CaptivaMobileSdk.aar\320935b22bccb5de27f7279f99fc928e\AndroidManifest.xml:24:5-26:36
+MERGED from [:CaptivaMobileSdk] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\CaptivaMobileSdk.aar\320935b22bccb5de27f7279f99fc928e\AndroidManifest.xml:24:5-26:36
+	android:required
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:21:9-32
+	android:name
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:20:9-53
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:23:22-64
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:24:5-65
+MERGED from [:CaptivaMobileSdk] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\CaptivaMobileSdk.aar\320935b22bccb5de27f7279f99fc928e\AndroidManifest.xml:28:5-65
+MERGED from [:CaptivaMobileSdk] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\CaptivaMobileSdk.aar\320935b22bccb5de27f7279f99fc928e\AndroidManifest.xml:28:5-65
+	android:name
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:24:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:25:5-81
+MERGED from [:CaptivaMobileSdk] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\CaptivaMobileSdk.aar\320935b22bccb5de27f7279f99fc928e\AndroidManifest.xml:29:5-81
+MERGED from [:CaptivaMobileSdk] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\CaptivaMobileSdk.aar\320935b22bccb5de27f7279f99fc928e\AndroidManifest.xml:29:5-81
+	android:name
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:25:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:26:22-76
+application
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:28:5-82:19
+MERGED from [com.android.support:design:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\ebc0232e4221b5e0547d006b22133714\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:design:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\ebc0232e4221b5e0547d006b22133714\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\0f7ddc575c052f3b171f86d52c6dbf16\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\0f7ddc575c052f3b171f86d52c6dbf16\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:transition:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\0372f817130fea3dc54368a5d5fe28be\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:transition:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\0372f817130fea3dc54368a5d5fe28be\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\1274298c8da5a2c793c75ef92dd854e5\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\1274298c8da5a2c793c75ef92dd854e5\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\06fed7fcb030f2a13ecec57a444c8126\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\06fed7fcb030f2a13ecec57a444c8126\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\572a9a9b8e9cfefef4a002905a97c3c3\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\572a9a9b8e9cfefef4a002905a97c3c3\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\baa92db72816702555f455636fab4d69\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\baa92db72816702555f455636fab4d69\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\78e852d3bfd09d42eb130349acb79d71\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\78e852d3bfd09d42eb130349acb79d71\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\9e6a7ed18e9d1f90b0371a1f66c20eb8\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\9e6a7ed18e9d1f90b0371a1f66c20eb8\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\395428766b6dbfff69b6a813dc06570b\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\395428766b6dbfff69b6a813dc06570b\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.0.aar\e0399342692967eaaff6e4bc84d0b1cf\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.0.aar\e0399342692967eaaff6e4bc84d0b1cf\AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:31:9-41
+	android:icon
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:30:9-53
+	android:allowBackup
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:29:9-35
+	android:theme
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:32:9-40
 activity#otmobile.MainActivity
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:42:9-45:57
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:42:9-45:57
 	android:label
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:44:13-51
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:44:13-51
 	android:theme
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:45:13-54
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:45:13-54
 	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:43:13-49
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:43:13-49
 activity#otmobile.EnhanceImageActivity
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:46:9-49:57
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:46:9-49:57
 	android:label
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:48:13-55
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:48:13-55
 	android:theme
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:49:13-54
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:49:13-54
 	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:47:13-57
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:47:13-57
 activity#otmobile.EnhanceImageCropActivity
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:50:9-53:57
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:50:9-53:57
 	android:label
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:52:13-59
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:52:13-59
 	android:theme
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:53:13-54
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:53:13-54
 	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:51:13-61
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:51:13-61
 activity#emc.captiva.mobile.sdk.QuadrilateralCropActivity
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:54:9-57:57
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:54:9-57:57
 	android:label
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:56:13-63
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:56:13-63
 	android:theme
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:57:13-54
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:57:13-54
 	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:55:13-76
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:55:13-76
 activity#emc.captiva.mobile.sdk.CameraActivity
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:59:9-62:57
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:59:9-62:57
 	android:configChanges
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:61:13-59
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:61:13-59
 	android:theme
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:62:13-54
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:62:13-54
 	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:60:13-65
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:60:13-65
 activity#otmobile.ImageInfoActivity
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:63:9-66:57
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:63:9-66:57
 	android:label
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:65:13-52
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:65:13-52
 	android:theme
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:66:13-54
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:66:13-54
 	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:64:13-54
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:64:13-54
 activity#otmobile.SettingsActivity
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:67:9-70:57
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:67:9-70:57
 	android:label
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:69:13-54
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:69:13-54
 	android:theme
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:70:13-54
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:70:13-54
 	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:68:13-53
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:68:13-53
 activity#otmobile.FirstScreen
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:71:9-79:20
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:71:9-79:20
 	android:label
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:73:13-45
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:73:13-45
 	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:72:13-48
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:72:13-48
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:74:13-78:29
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:74:13-78:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:75:17-69
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:75:17-69
 	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:75:25-66
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:75:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:77:17-77
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:77:17-77
 	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:77:27-74
-activity#otmobile.SnapResults
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:80:9-57
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:77:27-74
+activity#otmobile.CaptivaResults
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:80:9-60
 	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:80:19-54
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:80:19-57
 activity#otmobile.GridActivity
-ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:81:9-58
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:81:9-58
 	android:name
-		ADDED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:81:19-55
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:81:19-55
 uses-sdk
-INJECTED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [CaptivaMobileREST:captivamobilesdk:unspecified] C:\Users\hutchg\.android\build-cache\397a78972b57ff9092a2c5ac3eaf9dfad249cbc7\output\AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:design:25.1.0] C:\Users\hutchg\.android\build-cache\8af62dcf57d6eec1e1e8e524a933a2082d497a1a\output\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\hutchg\.android\build-cache\3d00f3805afb6a8b148ad8100d4e3626db018f32\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\hutchg\.android\build-cache\5aa8cdad563d7107076a02b3a9d2e4e2a513d546\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\hutchg\.android\build-cache\d3876316818673e39506319ccfb5c397ef4bd736\output\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:transition:25.1.0] C:\Users\hutchg\.android\build-cache\4e535a4f1c013260b6e1dda489343c9c491d6827\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\hutchg\.android\build-cache\b292c3f7fae6bca3306a9cdfa6d803f8ed43de15\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\hutchg\.android\build-cache\240ba0bb448670a2798f9d8998e9deabc60d2d6c\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\hutchg\.android\build-cache\2a206ca7ea66f7ef6b7b32d7311c58bf5a11ac6c\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\hutchg\.android\build-cache\a7a540df6043ac212013cb98ffcff3a6f10c7a67\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\hutchg\.android\build-cache\a9f33a890f19bf3d0232dee43c74c0b25121ee44\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\hutchg\.android\build-cache\5c0fecc768d4bc9f3ca6ed4f1e95ce2bfd80b6da\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.1.0] C:\Users\hutchg\.android\build-cache\b8f7e0e17a0bc23e8793001fbdd7c5baca69ce00\output\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\ebc0232e4221b5e0547d006b22133714\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\ebc0232e4221b5e0547d006b22133714\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\0f7ddc575c052f3b171f86d52c6dbf16\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\0f7ddc575c052f3b171f86d52c6dbf16\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:transition:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\0372f817130fea3dc54368a5d5fe28be\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\0372f817130fea3dc54368a5d5fe28be\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\1274298c8da5a2c793c75ef92dd854e5\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\1274298c8da5a2c793c75ef92dd854e5\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.1.0.aar\ad9cd7e40b6a7fea2d49fe4dbbc01471\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.1.0.aar\ad9cd7e40b6a7fea2d49fe4dbbc01471\AndroidManifest.xml:20:5-43
+MERGED from [:CaptivaMobileSdk] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\CaptivaMobileSdk.aar\320935b22bccb5de27f7279f99fc928e\AndroidManifest.xml:8:5-10:41
+MERGED from [:CaptivaMobileSdk] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\CaptivaMobileSdk.aar\320935b22bccb5de27f7279f99fc928e\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\06fed7fcb030f2a13ecec57a444c8126\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\06fed7fcb030f2a13ecec57a444c8126\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\572a9a9b8e9cfefef4a002905a97c3c3\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\572a9a9b8e9cfefef4a002905a97c3c3\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\baa92db72816702555f455636fab4d69\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\baa92db72816702555f455636fab4d69\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\78e852d3bfd09d42eb130349acb79d71\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\78e852d3bfd09d42eb130349acb79d71\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\9e6a7ed18e9d1f90b0371a1f66c20eb8\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\9e6a7ed18e9d1f90b0371a1f66c20eb8\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\395428766b6dbfff69b6a813dc06570b\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\395428766b6dbfff69b6a813dc06570b\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.0.aar\e0399342692967eaaff6e4bc84d0b1cf\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.0.aar\e0399342692967eaaff6e4bc84d0b1cf\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.1.0] C:\Users\hutchg\.android\build-cache\8af62dcf57d6eec1e1e8e524a933a2082d497a1a\output\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.1.0] C:\Users\ghutchin\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\ebc0232e4221b5e0547d006b22133714\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:38:13-40:57
+	android:resource
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:40:17-55
+	android:name
+		ADDED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:39:17-67
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from C:\Users\hutchg\Documents\Android Studio Projects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:2:1-84:12 reason: emc.captiva.mobile.sdk requested WRITE_EXTERNAL_STORAGE
+IMPLIED from C:\Users\ghutchin\AndroidStudioProjects\CaptivaMobileREST\app\src\main\AndroidManifest.xml:2:1-84:12 reason: emc.captiva.mobile.sdk requested WRITE_EXTERNAL_STORAGE

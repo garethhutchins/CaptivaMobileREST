@@ -37,22 +37,6 @@ public class SettingsActivity extends PreferenceActivity implements SharedPrefer
 
         // Make sure our preferences conform to our allowed values.
         Preference p = findPreference(key);
-        if (p instanceof ListPreference) {
-            ListPreference L = (ListPreference)p;
-            String temp;
-            Integer i;
-            Float f;
-            if (key.compareToIgnoreCase("Snap Environment") == 0) {
-                temp = L.getValue();
-                L.setValue(temp);
-            }
-            if (key.compareToIgnoreCase("Snap Export Type") == 0) {
-                temp = L.getValue();
-                L.setValue(temp);
-            }
-
-
-        }
 
         if (p instanceof EditTextPreference) {
             EditTextPreference pref = (EditTextPreference)p;            
@@ -60,47 +44,27 @@ public class SettingsActivity extends PreferenceActivity implements SharedPrefer
             Integer i;
             Float f;
             //Save the Snap Settings
-            if (key.compareToIgnoreCase("SNAP_USER") == 0) {
+            if (key.compareToIgnoreCase("Captiva_USER") == 0) {
                 temp = pref.getText();
                 pref.setText(temp);
             }
-            if (key.compareToIgnoreCase("SNAP_PASSWORD") == 0) {
+            if (key.compareToIgnoreCase("Captiva_PASSWORD") == 0) {
                 temp = pref.getText();
                 pref.setText(temp);
             }
-            if (key.compareToIgnoreCase("SNAP_URL") == 0) {
+            if (key.compareToIgnoreCase("Captiva_URL") == 0) {
                 temp = pref.getText();
                 pref.setText(temp);
             }
-            if (key.compareToIgnoreCase("SNAP_SUBSCRIPTION") == 0) {
+            if (key.compareToIgnoreCase("IP_PROFILE") == 0) {
                 temp = pref.getText();
                 pref.setText(temp);
             }
-            if (key.compareToIgnoreCase("SNAP_CAPTURE_PROFILE") == 0) {
+            if (key.compareToIgnoreCase("Captiva_RECOGNITION_PROJECT") == 0) {
                 temp = pref.getText();
                 pref.setText(temp);
             }
-            if (key.compareToIgnoreCase("SNAP_RECOGNITION_PROJECT") == 0) {
-                temp = pref.getText();
-                pref.setText(temp);
-            }
-            if (key.compareToIgnoreCase("snap_environment") == 0) {
-                temp = pref.getText();
-                pref.setText(temp);
-            }
-            if (key.compareToIgnoreCase("snap_export_type") == 0) {
-                temp = pref.getText();
-                pref.setText(temp);
-            }
-            if (key.compareToIgnoreCase("snap_export_name") == 0) {
-                temp = pref.getText();
-                pref.setText(temp);
-            }
-            if (key.compareToIgnoreCase("snap_IA_server") == 0) {
-                temp = pref.getText();
-                pref.setText(temp);
-            }
-            if (key.compareToIgnoreCase("snap_IA_catpureflow") == 0) {
+            if (key.compareToIgnoreCase("Captiva_catpureflow") == 0) {
                 temp = pref.getText();
                 pref.setText(temp);
             }

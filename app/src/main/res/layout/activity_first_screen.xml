@@ -5,7 +5,8 @@
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     tools:context="otmobile.FirstScreen"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    android:id="@+id/firstscreenRL">
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatSettings"
@@ -19,7 +20,8 @@
         app:fabSize="normal"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="17dp" />
+        android:layout_marginEnd="17dp"
+        app:backgroundTint="#00b8ba"/>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingGallery"
@@ -32,7 +34,8 @@
         android:src="@android:drawable/ic_menu_gallery"
         app:fabSize="normal"
         android:layout_above="@+id/floatSettings"
-        android:layout_alignStart="@+id/floatSettings" />
+        android:layout_alignStart="@+id/floatSettings"
+        app:backgroundTint="#4f3690"/>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingCamera"
@@ -45,18 +48,19 @@
         android:src="@android:drawable/ic_menu_camera"
         app:fabSize="normal"
         android:layout_above="@+id/floatingGallery"
-        android:layout_alignStart="@+id/floatingGallery" />
-
+        android:layout_alignStart="@+id/floatingGallery"
+        app:backgroundTint="#09bcef"
+        />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:contentDescription="Snap Logo"
-        android:cropToPadding="false"
-        android:scaleType="fitXY"
-        android:src="@drawable/otbackground"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/floatingCamera"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="43dp"
+        android:src="@drawable/otcontent"
+        />
+
 
 </RelativeLayout>

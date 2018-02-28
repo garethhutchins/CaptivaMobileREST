@@ -250,7 +250,7 @@ public class EnhanceImageActivity extends Activity implements QuadrilateralCropC
 	}
 	public void onSendToSnap(View view) {
 
-		PostToSnap Snap = new PostToSnap(this);
+		PostToCaptiva Snap = new PostToCaptiva(this);
 		Snap.OriginalImage = _filename;
 
 		// If the image has not been edited, then leave without saving.

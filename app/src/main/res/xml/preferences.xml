@@ -5,74 +5,43 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory
-        android:key="@string/snap_settings"
-        android:title="@string/snap_settings">
+        android:key="@string/captiva_settings"
+        android:title="@string/captiva_settings">
         <EditTextPreference
-            android:key="@string/SNAP_USER"
-            android:title="@string/SNAP_USER_TITLE"
-            android:summary="@string/SNAP_USER_SUMMARY"
-            android:defaultValue="Gareth.Hutchins@emc.com"
+            android:key="@string/Captiva_USER"
+            android:title="@string/Captiva_USER_TITLE"
+            android:summary="@string/Captiva_USER_SUMMARY"
+            android:defaultValue="Gareth.Hutchins@opentext.com"
             android:inputType="textEmailAddress"/>
         <EditTextPreference
-            android:key="@string/SNAP_PASSWORD"
-            android:title="@string/SNAP_PASSWORD_TITLE"
-            android:summary="@string/SNAP_PASSWORD_SUMMARY"
-            android:defaultValue=""
+            android:key="@string/Captiva_PASSWORD"
+            android:title="@string/Captiva_PASSWORD_TITLE"
+            android:summary="@string/Captiva_PASSWORD_SUMMARY"
             android:inputType="textPassword"/>
         <EditTextPreference
-            android:key="@string/SNAP_URL"
-            android:title="@string/SNAP_URL_TITLE"
-            android:summary="@string/SNAP_URL_SUMMARY"
-            android:defaultValue=""
+            android:key="@string/Captiva_URL"
+            android:title="@string/Captiva_URL_TITLE"
+            android:summary="@string/Captiva_URL_SUMMARY"
             android:inputType="textUri"/>
-        <EditTextPreference
-            android:key="@string/SNAP_SUBSCRIPTION"
-            android:title="@string/SNAP_SUBSCRIPTION_TITLE"
-            android:summary="@string/SNAP_SUBSCRIPTION_SUMMARY"
-            android:defaultValue=""
-            android:inputType="text"/>
-        <ListPreference
-            android:key="@string/snap_environment"
-            android:title="@string/snap_environment"
-            android:summary="@string/snap_environment_summary"
-            android:entries="@array/listEnvArray"
-            android:entryValues="@array/listEnvValues"
-            android:defaultValue="D"/>
     </PreferenceCategory>
     <PreferenceCategory
-        android:key="@string/snap_profiles"
-        android:title="@string/snap_profiles">
+        android:key="@string/captiva_profiles"
+        android:title="@string/captiva_profiles">
         <EditTextPreference
-            android:key="@string/SNAP_CAPTURE_PROFILE"
-            android:title="@string/SNAP_CAPTURE_PROFILE_TITLE"
-            android:summary="@string/SNAP_CAPTURE_PROFILE_SUMMARY"
-            android:defaultValue="EMCWorld" />
+            android:key="@string/IP_PROFILE"
+            android:title="@string/IP_PROFILE_TITLE"
+            android:summary="@string/IP_PROFILE_SUMMARY"
+             />
         <EditTextPreference
-            android:key="@string/SNAP_RECOGNITION_PROJECT"
-            android:title="@string/SNAP_RECOGNITION_PROJECT_TITLE"
-            android:summary="@string/SNAP_RECOGNITION_PROJECT_SUMMARY"
-            android:defaultValue="Default" />
-        <ListPreference
-            android:key="@string/snap_export_type"
-            android:title="@string/snap_export_type"
-            android:summary="@string/snap_export_type_summary"
-            android:entries="@array/listExpTypesArray"
-            android:entryValues="@array/listExpTypesValues" />
+            android:key="@string/Captiva_RECOGNITION_PROJECT"
+            android:title="@string/Captiva_RECOGNITION_PROJECT_TITLE"
+            android:summary="@string/Captiva_RECOGNITION_PROJECT_SUMMARY"
+             />
         <EditTextPreference
-            android:key="@string/snap_export_name"
-            android:title="@string/snap_export_name"
-            android:summary="@string/snap_export_name_summary"
-            android:defaultValue="" />
-        <EditTextPreference
-        android:key="@string/snap_IA_server"
-        android:title="@string/snap_IA_server"
-        android:summary="@string/snap_IA_server_summary"
-        android:defaultValue="" />
-        <EditTextPreference
-            android:key="@string/snap_IA_catpureflow"
-            android:title="@string/snap_IA_catpureflow"
-            android:summary="@string/snap_IA_catpureflow_summary"
-            android:defaultValue="" />
+            android:key="@string/Captiva_catpureflow"
+            android:title="@string/Captiva_catpureflow"
+            android:summary="@string/Captiva_catpureflow_summary"
+             />
     </PreferenceCategory>
     <PreferenceCategory
         android:key="@string/GPREF_CAPTURE_GROUP"
@@ -81,22 +50,22 @@
             android:key="@string/GPREF_EDGELABEL"
             android:title="@string/GPREF_EDGELABEL_TITLE"
             android:summary="@string/GPREF_EDGELABEL_SUMMARY"
-            android:defaultValue="" />
+             />
         <EditTextPreference
             android:key="@string/GPREF_CENTERLABEL"
             android:title="@string/GPREF_CENTERLABEL_TITLE"
             android:summary="@string/GPREF_CENTERLABEL_SUMMARY"
-            android:defaultValue="" />
+             />
         <EditTextPreference
             android:key="@string/GPREF_CAPTURINGLABEL"
             android:title="@string/GPREF_CAPTURINGLABEL_TITLE"
             android:summary="@string/GPREF_CAPTURINGLABEL_SUMMARY"
-            android:defaultValue="" />
+             />
         <CheckBoxPreference
             android:key="@string/GPREF_SENSOR_LIGHT"
             android:title="@string/GPREF_SENSOR_LIGHT_TITLE"
             android:summary="@string/GPREF_SENSOR_LIGHT_SUMMARY"
-            android:defaultValue="true" />
+            android:defaultValue="false" />
         <EditTextPreference
             android:key="@string/GPREF_SENSOR_LIGHT_VALUE"
             android:title="@string/GPREF_SENSOR_LIGHT_VALUE_TITLE"
@@ -106,7 +75,7 @@
             android:key="@string/GPREF_SENSOR_MOTION"
             android:title="@string/GPREF_SENSOR_MOTION_TITLE"
             android:summary="@string/GPREF_SENSOR_MOTION_SUMMARY"
-            android:defaultValue="true" />
+            android:defaultValue="false" />
         <EditTextPreference
             android:key="@string/GPREF_SENSOR_MOTION_VALUE"
             android:title="@string/GPREF_SENSOR_MOTION_VALUE_TITLE"

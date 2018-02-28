@@ -27,7 +27,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/otappicon"
+        android:icon="@drawable/ot_content_app_icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <provider
@@ -77,7 +77,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="otmobile.SnapResults" />
+        <activity android:name="otmobile.CaptivaResults" />
         <activity android:name="otmobile.GridActivity" />
     </application>
 

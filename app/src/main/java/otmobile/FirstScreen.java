@@ -1,13 +1,17 @@
 package otmobile;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.view.View;
 
@@ -27,6 +31,9 @@ public class FirstScreen extends Activity implements PictureCallback {
     static boolean _newLoad = true;
     private static String TAG = MainActivity.class.getSimpleName();
     private final int CHOOSE_IMAGE = 1;
+    private static  final int PERMISSION_REQUEST_CAMERA = 0;
+    private static  final int PERMISSION_REQUEST_GALLERY = 0;
+    private View mLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,41 +65,104 @@ public class FirstScreen extends Activity implements PictureCallback {
                 onGalleryClick(v);
             }
         });
+        mLayout = findViewById(R.id.firstscreenRL);
 
     }
     public void onGalleryClick(View view) {
+        //First check the gallery permissions
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                == PackageManager.PERMISSION_GRANTED) {
+            //Permission is OK
+            Intent galleryIntent = new Intent(
+                    Intent.ACTION_PICK,
+                    android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+            startActivityForResult(galleryIntent , CHOOSE_IMAGE );
+        }
+        else {
+            //Request Permission
+            requestGalleryPermission();
+        }
 
 
-        Intent galleryIntent = new Intent(
-                Intent.ACTION_PICK,
-                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        startActivityForResult(galleryIntent , CHOOSE_IMAGE );
+    }
+
+    private void requestGalleryPermission() {
+        if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+            //Show detailed prompt
+            Snackbar.make(mLayout,"Gallery access is required to select images.",Snackbar.LENGTH_INDEFINITE).setAction("OK", new View.OnClickListener(){
+                @Override
+                public void onClick(View view) {
+                    //Request the permission
+                    ActivityCompat.requestPermissions(FirstScreen.this,
+                            new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                            PERMISSION_REQUEST_GALLERY);
+                }
+            }).show();
+        } else {
+            Snackbar.make(mLayout,
+                    "Permission is not available. Requesting gallery permissions.",
+                    Snackbar.LENGTH_SHORT).show();
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                    PERMISSION_REQUEST_GALLERY);
+        }
+    }
+
+    private void requestCameraPermission() {
+        if (ActivityCompat.shouldShowRequestPermissionRationale(this,Manifest.permission.CAMERA)) {
+            //Show detailed prompt
+            Snackbar.make(mLayout,"Gallery access is required to select images.",Snackbar.LENGTH_INDEFINITE).setAction("OK", new View.OnClickListener(){
+                @Override
+                public void onClick(View view) {
+                    //Request the permission
+                    ActivityCompat.requestPermissions(FirstScreen.this,
+                            new String[]{Manifest.permission.CAMERA},
+                            PERMISSION_REQUEST_CAMERA);
+                }
+            }).show();
+        } else {
+            Snackbar.make(mLayout,
+                    "Permission is not available. Requesting gallery permissions.",
+                    Snackbar.LENGTH_SHORT).show();
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA},
+                    PERMISSION_REQUEST_CAMERA);
+        }
     }
 
     public void onTakePictureClick(View view) {
-        // Use a separate HashMap to hold non-TakePicture parameter values from preferences.
-        HashMap<String, Object> appParams = new HashMap<>();
-        // Obtain our picture parameters from the preferences. Only supported SDK keys should go into parameters.
-        HashMap<String, Object> parameters = CoreHelper.getTakePictureParametersFromPrefs(this, appParams);
+        //First check the Camera permissions
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
+                == PackageManager.PERMISSION_GRANTED) {
+            //Permission is OK
 
-        // Get the preference for CaptureWindow
-        SharedPreferences gprefs = PreferenceManager.getDefaultSharedPreferences(this);
-        String capWndNone = CoreHelper.getStringResource(this, otmobile.R.string.GPREF_CAPTURE_CUSTOM_OPTIONS_NONE);
-        String capWndPref = gprefs.getString(CoreHelper.getStringResource(this, otmobile.R.string.GPREF_CAPTURE_CUSTOM_OPTIONS), capWndNone);
+            // Use a separate HashMap to hold non-TakePicture parameter values from preferences.
+            HashMap<String, Object> appParams = new HashMap<>();
+            // Obtain our picture parameters from the preferences. Only supported SDK keys should go into parameters.
+            HashMap<String, Object> parameters = CoreHelper.getTakePictureParametersFromPrefs(this, appParams);
 
-        if (capWndPref.compareToIgnoreCase(capWndNone) != 0) {
-            // Assign a custom CaptureWindow if specified by the prefs.
-            CaptureWindow wnd = new CustomWindow(this, capWndPref, appParams);
-            parameters.put(CaptureImage.PICTURE_CAPTUREWINDOW, wnd);
+            // Get the preference for CaptureWindow
+            SharedPreferences gprefs = PreferenceManager.getDefaultSharedPreferences(this);
+            String capWndNone = CoreHelper.getStringResource(this, R.string.GPREF_CAPTURE_CUSTOM_OPTIONS_NONE);
+            String capWndPref = gprefs.getString(CoreHelper.getStringResource(this, R.string.GPREF_CAPTURE_CUSTOM_OPTIONS), capWndNone);
+
+            if (capWndPref.compareToIgnoreCase(capWndNone) != 0) {
+                // Assign a custom CaptureWindow if specified by the prefs.
+                CaptureWindow wnd = new CustomWindow(this, capWndPref, appParams);
+                parameters.put(CaptureImage.PICTURE_CAPTUREWINDOW, wnd);
+            }
+            else if ((boolean) appParams.get(USE_QUADVIEW))
+            {
+                CaptureWindow wnd = new CustomWindow(this, capWndPref, appParams);
+                parameters.put(CaptureImage.PICTURE_CAPTUREWINDOW, wnd);
+            }
+
+            // Launch the camera to take a picture.
+            CaptureImage.takePicture(this, parameters);
         }
-        else if ((boolean) appParams.get(USE_QUADVIEW))
-        {
-            CaptureWindow wnd = new CustomWindow(this, capWndPref, appParams);
-            parameters.put(CaptureImage.PICTURE_CAPTUREWINDOW, wnd);
+        else {
+            //Request Permission
+            requestCameraPermission();
         }
 
-        // Launch the camera to take a picture.
-        CaptureImage.takePicture(this, parameters);
     }
 
     public void onSettingsClick(View view) {

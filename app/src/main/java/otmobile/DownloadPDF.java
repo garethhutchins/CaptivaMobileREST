@@ -105,23 +105,12 @@ public class DownloadPDF extends AsyncTask {
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         context.startActivity(Intent.createChooser(intent, "Open PDF"));
-        /**
-        File file = new File(DownloadFile);
-        PackageManager packageManager = context.getPackageManager();
-        Intent testIntent = new Intent(Intent.ACTION_VIEW);
-        testIntent.setType("application/pdf");
-        List list = packageManager.queryIntentActivities(testIntent, PackageManager.MATCH_DEFAULT_ONLY);
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        Uri uri = Uri.fromFile(file);
-        intent.setDataAndType(uri, "application/pdf");
-        context.startActivity(intent);
-         **/
+
     }
     private void Download() {
         dialog.setMessage("Downloading PDF");
         SharedPreferences gprefs = PreferenceManager.getDefaultSharedPreferences(context);
-        String url = gprefs.getString("Snap URL", "");
+        String url = gprefs.getString("Captiva URL", "");
         url = url + "/cp-rest/session/files/" + _PDFFileID;
         Log.d("Requesting File",url);
 
@@ -183,7 +172,7 @@ public class DownloadPDF extends AsyncTask {
     private void Convert() {
         //First get the URL from the preferences
         SharedPreferences gprefs = PreferenceManager.getDefaultSharedPreferences(context);
-        String url = gprefs.getString("Snap URL", "");
+        String url = gprefs.getString("Captiva URL", "");
         url = url + "/cp-rest/session/services/fullpageocr";
 
         // Build the request

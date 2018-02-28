@@ -1,1 +1,1 @@
-include ':app', ':captivamobilesdk'
+include ':app', ':captivamobilesdk', ':CaptivaMobileSdk'

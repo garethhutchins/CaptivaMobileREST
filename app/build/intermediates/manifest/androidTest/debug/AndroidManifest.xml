@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="captiva.mobile.test">
+    package="captiva.mobile.rest.test">
 
-    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="24" />
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="26" />
 
-    <application>
+    <application android:debuggable="true" >
         <uses-library android:name="android.test.runner" />
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="captiva.mobile"
+                     android:targetPackage="captiva.mobile.rest"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for captiva.mobile"/>
+                     android:label="Tests for captiva.mobile.rest"/>
 </manifest>
