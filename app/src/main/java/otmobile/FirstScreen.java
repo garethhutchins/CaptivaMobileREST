@@ -42,6 +42,7 @@ public class FirstScreen extends Activity implements PictureCallback {
         setContentView(otmobile.R.layout.activity_first_screen);
         //License the Application
         CoreHelper.license(this);
+
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
         //Add a listener for the take picture

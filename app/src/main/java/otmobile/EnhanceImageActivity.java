@@ -86,8 +86,18 @@ public class EnhanceImageActivity extends Activity implements QuadrilateralCropC
 		quadCropParams.put(CaptureImage.CROP_LINE_WIDTH, quadCropLineWidth);
 		quadCropParams.put(CaptureImage.CROP_CIRCLE_RADIUS, quadCropCircleRadius);
 		quadCropParams.put(CaptureImage.CROP_SHADE_BACKGROUND, quadCropShadeBackground);
+		quadCropParams.put(CaptureImage.CROP_TYPE, CaptureImage.QUADRILATERAL_TYPE.Model);
 
 		// Start the Quadrilateral Crop activity.
+		final String modelPath = CoreHelper.copyResource(this,"quadrilateral.yml");
+		try {
+			CaptureImage.initialize(new HashMap<String, Object>() {{
+				put(CaptureImage.INITIALIZE_QUADRILATERAL_MODEL, modelPath);
+			}});
+		} catch (CaptureException e) {
+			e.printStackTrace();
+		}
+
 		CaptureImage.showQuadrilateralCrop(this, quadCropParams);
 
 	}

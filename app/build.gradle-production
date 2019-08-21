@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 
 dependencies {
     // This is the dependency that utilizes the Captiva Mobile SDK.
-    compile(name: 'captivamobilesdk', ext: 'aar')
+
 }
 
 // This is required to compile AAR files from the libs folder.

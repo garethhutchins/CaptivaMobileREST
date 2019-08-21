@@ -10,12 +10,14 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
+import android.content.res.AssetManager;
 import android.database.Cursor;
 import android.graphics.Rect;
 import android.net.Uri;
 import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 
 import java.io.File;
@@ -29,6 +31,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import emc.captiva.mobile.sdk.CaptureImage;
+
+import static com.android.volley.VolleyLog.TAG;
 
 /**
  * A class that provides static helpers for common needs.
@@ -443,8 +447,31 @@ public final class CoreHelper {
         //We're just going to hard code these
         //String license = preferences.getString(CoreHelper.getStringResource(context, R.string.GPREF_LICENSE), "");
         //String applicationId = preferences.getString(CoreHelper.getStringResource(context, R.string.GPREF_APPLICATIONID), "");
-        String license = "";
-        String applicationId = "";
+        String license = ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Product=Captiva Mobile SDK, CreateDate=2014-04-23 14:44:54, KeyId=c340-fe9a-ae78, Sales Order No=EMC Internal, Customer Name=EMC Internal DEV, Application Name=EMC World 2014 Demo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*!0834204886454239320/dVVgd1hAPj0XzDFEdkg+yPbWOR/a8apYFRHv3zDXnVNK2j0GY0ES0KsZxNTy6pUWZw0CY1Mof5Wk1PLqlRZnDQJjUyh/ydeE+dWm1PLqlQhmCynzgXkV7p2HFVpEOA==*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>";
+        String applicationId = "EMC World 2014 Demo";
         return !(license.length() <= 0 || applicationId.length() <= 0) && CaptureImage.addLicenseKey(applicationId, license);
     }
+    public static String copyResource(Context context, String resource) {
+        File file = new File(context.getFilesDir(), resource);
+        AssetManager assetManager = context.getAssets();
+
+        if (file.exists()) {
+            return file.getAbsolutePath();
+        }
+
+        try (InputStream input = assetManager.open(resource);
+             FileOutputStream output = new FileOutputStream(file)) {
+            byte[] buffer = new byte[1024 * 128];
+            int length;
+
+            while ((length = input.read(buffer)) > 0) {
+                output.write(buffer, 0, length);
+            }
+        } catch (IOException e) {
+            Log.e(TAG, "Unable to copy resources", e); //  don’t do that in production 😊
+        }
+
+        return file.getAbsolutePath();
+    }
+
 }

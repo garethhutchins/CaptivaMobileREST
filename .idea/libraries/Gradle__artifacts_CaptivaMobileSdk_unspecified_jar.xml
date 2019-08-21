@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:captivamobilesdk:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/captivamobilesdk/build/.transforms/3ca63959c7bff991ff690a962b510251/captivamobilesdk/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/captivamobilesdk/build/.transforms/3ca63959c7bff991ff690a962b510251/captivamobilesdk/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -59,8 +59,7 @@
         android:layout_above="@+id/floatingCamera"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="43dp"
-        android:src="@drawable/otcontent"
-        />
+        android:src="@drawable/otcontent" />
 
 
 </RelativeLayout>
